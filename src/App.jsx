@@ -26,7 +26,7 @@ function App() {
       <div className="Input-Btn-Container">
         <input
           type="text"
-          placeholder="Enter Text"
+          placeholder="Enter Text or URL"
           value={url}
           onChange={(e) => setUrl(e.target.value)}
         />
