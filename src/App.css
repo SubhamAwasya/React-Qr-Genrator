@@ -1,0 +1,45 @@
+.App-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Input-Btn-Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+.Input-Btn-Container input {
+  border-style: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  outline: none;
+  background-color: #1a1a1a;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  width: 200px;
+  padding: 5px 0 5px 10px;
+  border-right: none;
+  height: 42px;
+}
+
+.Input-Btn-Container button {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 10px;
+  height: 42px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+}
+
+.Qr-Code-Image {
+  border-radius: 10px;
+  max-width: 100vw;
+  margin: 0 10px;
+}
