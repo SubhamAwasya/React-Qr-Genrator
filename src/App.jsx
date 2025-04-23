@@ -9,7 +9,7 @@ function App() {
   async function GenrateQRCode() {
     if (url === "") {
       setQrCodeImage("");
-      alert("Enter URL");
+      alert("Enter Text of URL");
       return;
     }
     try {
@@ -32,7 +32,15 @@ function App() {
         />
         <button onClick={GenrateQRCode}>Generate</button>
       </div>
-      <img className="Qr-Code-Image" src={qrCodeImage} />
+      {qrCodeImage && (
+        <div className="Qr-Code-Container" style={{ marginTop: "1rem" }}>
+          <a href={qrCodeImage} download="qrcode.png">
+            <button className="button">Download</button>
+          </a>
+          <img className="Qr-Code-Image" src={qrCodeImage} alt="QR Code" />
+          <br />
+        </div>
+      )}
     </div>
   );
 }
